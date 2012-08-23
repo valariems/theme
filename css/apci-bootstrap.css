@@ -30,10 +30,6 @@ h2 {
   margin-top: 20px;
 }
 
-.navbar {
-
-}
-
 .navbar-inner {
   background-color: #126D89;
   background-image: -moz-linear-gradient(top, #2c7892, #1a4958);
@@ -51,15 +47,55 @@ h2 {
   box-shadow: 0px 2px 3px #000000 !important;
 }
 
+.navbar .nav {
+  margin: 0;
+}
+
 .navbar .brand {
   padding: 0px 20px 0px 20px;
 }
 
-/*
-.navbar .nav > li > a {
-  color: #ddd;
+.navbar .nav > li {
+  text-shadow: 1px 1px #000; 
+  font-size: 13px;
+  font-weight: bold; 
+  height: 30px;
+  margin: 0;
 }
-*/
+
+.navbar .nav.pull-right > li {
+  border-left: 2px groove #126D89; 
+}
+
+.navbar .nav > li.last {
+  border-right: 2px groove #126D89; 
+}
+
+.navbar .nav > li > a {
+  color: #ffffff;
+  padding: 7px 0 0 0;
+  text-shadow: none;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.navbar .nav.pull-right > li > a {
+  padding: 7px 15px 0 20px;
+  text-shadow: 1px 1px 0 black;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+
+.navbar .nav > li > a:hover {
+  color: #ffffff;
+}
 
 code {
   color: #52595D;
