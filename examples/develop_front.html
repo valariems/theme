@@ -17,9 +17,9 @@
 
 <body>
   <div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
+    <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/"><img src="../assets/logo-full-brohead-bw-40.png"/></a>
+      <a class="brand" href="/"><img src="../assets/allplayerscom_logo.png"/></a>
       <ul class="nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
@@ -75,130 +75,71 @@
       </ul>
     </div>
   </div>
-</div>
-<div id="header-bump"></div>
+  </div>
 
   <div id="wrapper">
-    <div class="content">
+    <div class="container">
       <div class="alert alert-block"><h4 class="alert-heading">Notice</h4> Currently the AllPlayers.com API is in beta; for more information feel free to ask questions in (freenode) <code><a href="http://webchat.freenode.net/?channels=allplayers&randomnick=1&prompt=1" target="_blank">#allplayers</a></code> or email us: <a href="mailto:api@allplayers.com">api@allplayers.com</a>.</div>
+      <div class="content span8">
       <div id="welcome">
-  <h1>Welcome to the AllPlayers.com Developer site</h1>
-  <p>
-    This site contains API documentation for the publicly available components of the AllPlayers.com site.
-  </p>
-</div>
+        <h1>Welcome to the AllPlayers.com Developer site</h1>
+        <p>This site contains API documentation for the publicly available components of the AllPlayers.com site.</p>
+      </div>
 
-<div id="public_wadl">
-  <!-- Begin: XSLT Processed WADL Info -->
-  <h2>
-      Non-authorized API
-  </h2>
-  <table class="table">
-  <tr>
-    <th>Resource</th>
-
-    <th>Method</th>
-
-    <th>Description</th>
-  </tr>
-
-  <tr>
-    <td class="summary"><a href=
-    "#idp301888">https://www.allplayers.com/api/v1/rest/users</a></td>
-
-    <td class="summary"><a href=
-    "#_apci_api_user_create-id">POST</a><br />
-    <br /></td>
-
-    <td class="summary">Create User<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
-    <td class="summary"><a href=
-    "#idp390608">https://www.allplayers.com/api/v1/rest/groups</a></td>
-
-    <td class="summary"><a href=
-    "#_apci_api_groups_index-search">GET</a><br />
-    <br /></td>
-
-    <td class="summary">Search Groups<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
-    <td class="summary"><a href=
-    "#idp390976">https://www.allplayers.com/api/v1/rest/groups/{uuid}</a></td>
-
-    <td class="summary"><a href=
-    "#_apci_api_groups_retrieve-uuid">GET</a><br />
-    <br /></td>
-
-    <td class="summary">Get Group information by Group
-    ID<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
-    <td class="summary"><a href=
-    "#idp395056">https://www.allplayers.com/api/v1/rest/groups/{uuid}/albums</a></td>
-
-    <td class="summary"><a href=
-    "#_apci_api_groups_albums_retrieve-uuid">GET</a><br />
-    <br /></td>
-
-    <td class="summary">retrieve a list of albums for this
-    group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
-    <td class="summary"><a href=
+      <div id="public_wadl">
+        <!-- Begin: XSLT Processed WADL Info -->
+        <h2>
+            Non-authorized API
+        </h2>
+        <table class="table">
+        <tr>
+          <th>Resource</th>
+          <th>Method</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td class="summary"><a href=
+          "#idp301888">https://www.allplayers.com/api/v1/rest/users</a></td>
+          <td class="summary"><a href=
+          "#_apci_api_user_create-id">POST</a><br />
+          <br /></td>
+          <td class="summary">Create User<br /></td>
+        </tr>
+        <tr>
+          <td class="summary"><a href=
+          "#idp390608">https://www.allplayers.com/api/v1/rest/groups</a></td>
+          <td class="summary"><a href=
+          "#_apci_api_groups_index-search">GET</a><br />
+          <br /></td>
+          <td class="summary">Search Groups<br /></td>
+        </tr>
+        <tr>
+          <td class="summary"><a href=
+          "#idp390976">https://www.allplayers.com/api/v1/rest/groups/{uuid}</a></td>
+          <td class="summary"><a href=
+          "#_apci_api_groups_retrieve-uuid">GET</a><br />
+          <br /></td>
+          <td class="summary">Get Group information by Group
+          ID<br /></td>
+        </tr>
+        <tr>
+          <td class="summary"><a href=
+          "#idp395056">https://www.allplayers.com/api/v1/rest/groups/{uuid}/albums</a></td>
+          <td class="summary"><a href=
+          "#_apci_api_groups_albums_retrieve-uuid">GET</a><br />
+          <br /></td>
+          <td class="summary">retrieve a list of albums for this
+          group<br /></td>
+        </tr>
+        <tr>
+          <td class="summary"><a href=
     "#idp400720">https://www.allplayers.com/api/v1/rest/groups/{uuid}/events</a></td>
-
-    <td class="summary"><a href=
-    "#_apci_api_groups_events_retrieve-uuid">GET</a><br />
-    <br /></td>
-
-    <td class="summary">retrieve a list of events for this
-    group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
+          <td class="summary"><a href=
+          "#_apci_api_groups_events_retrieve-uuid">GET</a><br />
+          <br /></td>
+          <td class="summary">retrieve a list of events for this
+          group<br /></td>
+        </tr>
 
   <tr>
     <td class="summary"><a href=
@@ -210,14 +151,6 @@
 
     <td class="summary">retrieve a list of members for this
     group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -233,14 +166,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp422720">https://www.allplayers.com/api/v1/rest/groups/{uuid}/subgroups</a></td>
 
@@ -250,14 +175,6 @@
 
     <td class="summary">retrieve a list of subgroups for this
     group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -273,14 +190,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp450592">https://www.allplayers.com/api/v1/rest/albums/{uuid}</a></td>
 
@@ -289,14 +198,6 @@
     <br /></td>
 
     <td class="summary">get album by uuid<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -311,14 +212,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp462192">https://www.allplayers.com/api/v1/rest/photos/{uuid}</a></td>
 
@@ -327,14 +220,6 @@
     <br /></td>
 
     <td class="summary">Get photo by uuid<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -349,14 +234,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp578816">https://www.allplayers.com/api/v1/rest/resources/{uuid}</a></td>
 
@@ -367,20 +244,13 @@
     <td class="summary">Retrieve Resource by Resource UUID<br /></td>
   </tr>
 
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
 </table>
 
 
   <h2>
       Authorized API
   </h2>
-  <table>
+  <table class="table">
   <tr>
     <th>Resource</th>
 
@@ -405,14 +275,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp358576">https://www.allplayers.com/api/v1/rest/users/{uuid}</a></td>
 
@@ -428,14 +290,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp407808">https://www.allplayers.com/api/v1/rest/users/{uuid}/groups</a></td>
 
@@ -448,14 +302,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp414656">https://www.allplayers.com/api/v1/rest/users/{uuid}/friends</a></td>
 
@@ -464,14 +310,6 @@
     <br /></td>
 
     <td class="summary">Show friends for a given user<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -507,14 +345,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp439056">https://www.allplayers.com/api/v1/rest/groups</a></td>
 
@@ -527,14 +357,6 @@
     <td class="summary">Create Groups<br />
     <br />
     Search Groups<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -557,14 +379,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp498192">https://www.allplayers.com/api/v1/rest/groups/{uuid}/albums</a></td>
 
@@ -574,14 +388,6 @@
 
     <td class="summary">retrieve a list of albums for this
     group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -597,14 +403,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp513168">https://www.allplayers.com/api/v1/rest/groups/{uuid}/members</a></td>
 
@@ -614,14 +412,6 @@
 
     <td class="summary">retrieve a list of members for this
     group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -637,14 +427,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp525632">https://www.allplayers.com/api/v1/rest/groups/{uuid}/subgroups</a></td>
 
@@ -654,14 +436,6 @@
 
     <td class="summary">retrieve a list of subgroups for this
     group<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -677,14 +451,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp540016">https://www.allplayers.com/api/v1/rest/groups/roles</a></td>
 
@@ -694,14 +460,6 @@
 
     <td class="summary">Retrieve the roles (uuid) belonging to a
     group optionally targeting a specific user (uuid).<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -716,14 +474,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp620560">https://www.allplayers.com/api/v1/rest/albums/{uuid}/photos</a></td>
 
@@ -735,14 +485,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp627744">https://www.allplayers.com/api/v1/rest/photos/{uuid}</a></td>
 
@@ -751,14 +493,6 @@
     <br /></td>
 
     <td class="summary">Get photo by uuid<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -775,14 +509,6 @@
     <br />
     POST: Send A New Message, Create New Thread or Reply To A
     thread<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -805,14 +531,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp686528">https://www.allplayers.com/api/v1/rest/events</a></td>
 
@@ -821,14 +539,6 @@
     <br /></td>
 
     <td class="summary">Create a new event<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -851,14 +561,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp797792">https://www.allplayers.com/api/v1/rest/resources</a></td>
 
@@ -867,14 +569,6 @@
     <br /></td>
 
     <td class="summary">Create a new Resource<br /></td>
-  </tr>
-
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
   </tr>
 
   <tr>
@@ -893,14 +587,6 @@
   </tr>
 
   <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
-
-  <tr>
     <td class="summary"><a href=
     "#idp797794">https://www.allplayers.com/api/v1/rest/notifier</a></td>
 
@@ -911,13 +597,6 @@
     <td class="summary">Create a new Notifier<br /></td>
   </tr>
 
-  <tr>
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-
-    <td class="summarySeparator"></td>
-  </tr>
 </table>
 
   <!-- End: XSLT Processed WADL Info -->
@@ -926,92 +605,32 @@
 </div>
 
     </div>
-  <div class="sidebar-shell">
-  <div class="sidebar-module">
+  <div class="sidebar-module span4">
     <ul class="nav-list">
-
-      <li>
-
-        <h3><a href="general.html">General API Information</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="oauth.html">OAuth</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="users.html">Users</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="groups.html">Groups</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="events.html">Events</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="messages.html">Messages</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="resources.html">Resources</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="fields.html">Field Definitions</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="console.html">API Console</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
-      <li>
-
-        <h3><a href="notifier.html">Notifier</a></h3>
-
-        <span class="spacer"></span>
-      </li>
-
+      <li><h3><a href="general.html">General API Information</a></h3></li>
+      <li><h3><a href="oauth.html">OAuth</a></h3></li>
+      <li><h3><a href="users.html">Users</a></h3></li>
+      <li><h3><a href="groups.html">Groups</a></h3></li>
+      <li><h3><a href="events.html">Events</a></h3></li>
+      <li><h3><a href="messages.html">Messages</a></h3></li>
+      <li><h3><a href="resources.html">Resources</a></h3></li>
+      <li><h3><a href="fields.html">Field Definitions</a></h3></li>
+      <li><h3><a href="console.html">API Console</a></h3></li>
+      <li><h3><a href="notifier.html">Notifier</a></h3></li>
     </ul>
   </div> <!-- /sidebar-module -->
-  <div class="sidebar-module">
+  <div class="sidebar-module span4">
     <p>Having trouble or looking for additional information? Please check the API <a href="https://github.com/AllPlayers/develop.allplayers.com/wiki/Frequently-Asked-Questions">FAQ</a>, join us on <a href="http://freenode.net/faq.shtml">freenode</a>: <code><a href="http://webchat.freenode.net/?channels=allplayers&randomnick=1&prompt=1" target="_blank">#allplayers</a></code>, or <a href="https://github.com/AllPlayers/develop.allplayers.com/issues">search for or create an issue</a>.</p>
   </div>
-  <div class="sidebar-module">
+  <div class="sidebar-module span4">
     <p>This website is <a href="http://github.com/AllPlayers/develop.allplayers.com" target="_blank">open source</a>. Please help us by forking the project and adding to it.</p>
   </div>
 </div><!-- /sidebar-shell -->
 
+  </div><!-- .container -->
   </div><!-- #wrapper -->
-  <!--**************
+
+<!--**************
    FOOTER
 **************-->
   <div id="footer" >
